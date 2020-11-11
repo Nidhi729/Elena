@@ -1,11 +1,10 @@
 import osmnx as ox
 import Djikstra
-import Astar
 
-def getElevationGain(G, start, end):
+def getElevationGain(Graph, start, end):
     if start == end:
         return 0
-    return G.nodes[start]['elevation'] - G.nodes[end]['elevation']
+    return Graph.nodes[start]['elevation'] - Graph.nodes[end]['elevation']
 
 def getPathElevation(Graph, path):
     elevation = 0

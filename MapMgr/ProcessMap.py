@@ -1,11 +1,16 @@
 from geopy.geocoders import Nominatim
 
+from RoutingMgr.ProcessRoute import ProcessRoute
+
+from MapMgr.GenerateMap import GenerateMap
+
 class ProcessMap(object):
     '''
     Class to interact with osmnx api and translate address to required format
     '''
     def __init__(self):
         self.geolocator = Nominatim(user_agent='elena')
+        self.genMapObj = GenerateMap()
         
     
     def processLocationParams(self, location):
@@ -20,7 +25,7 @@ class ProcessMap(object):
         return params
     
     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
-        pass 
+        graph, projectedGraph =  self.genMapObj.generateMap()
     
     
     

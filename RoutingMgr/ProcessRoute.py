@@ -20,8 +20,20 @@ class ProcessRoute(object):
         srcParams = self.processMap.processLocationParams(source)
         destParams = self.processMap.processLocationParams(destination)
         
-        route, dist, elevation = self.findRoute(srcParams, destParams, percentage, boolIsMax)
+        route, dist, elevation = self.processMap.findRoute(srcParams, destParams, percentage, boolIsMax)
         
+        respParams = dict()
+        respParams['route'] = route
+        respParams['distance'] = dist
+        respParams['elevationGain'] = elevation
         
-    def findRoute(self, srcParams, destParams, percentage, isMax):
-        pass 
+        resp = jsonify(respParams)
+        resp.headers.add('Access-Control-Allow-Origin','*')
+        return resp 
+        
+  
+    
+    
+    
+    
+    

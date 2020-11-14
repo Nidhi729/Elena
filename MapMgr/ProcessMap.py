@@ -1,10 +1,9 @@
 from geopy.geocoders import Nominatim
+
 class ProcessMap(object):
     '''
     Class to interact with osmnx api and translate address to required format
     '''
-
-
     def __init__(self):
         self.geolocator = Nominatim(user_agent='elena')
         
@@ -19,4 +18,9 @@ class ProcessMap(object):
         params['longitude'] = self.geolocator.geocode(location).longitude
         
         return params
+    
+    def findRoute(self, srcParams, destParams, percentage, boolIsMax):
+        pass 
+    
+    
     

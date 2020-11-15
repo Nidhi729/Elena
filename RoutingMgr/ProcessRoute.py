@@ -44,15 +44,7 @@ class ProcessRoute(object):
         return resp 
     
     
-    def isLocationValid(self, graph, latitude, longitude):
-        _, dist = osmnx.get_nearest_node(graph, (latitude, longitude), return_dist=True)
-        if dist > 10000:
-            return False
-        return True
     
-    def getNearestNode(self, graph, latitude, longitude):
-        return osmnx.get_nearest_node(graph, latitude, longitude)
-
 
     def getPath(self, graph, startNode, endNode, percetage, boolIsMax):
         # write function get_From_djikstra from lasamson

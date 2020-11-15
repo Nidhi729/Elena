@@ -1,3 +1,5 @@
+import osmnx
+
 from geopy.geocoders import Nominatim
 
 from RoutingMgr.ProcessRoute import ProcessRoute
@@ -24,19 +26,29 @@ class ProcessMap(object):
         params['longitude'] = self.geolocator.geocode(location).longitude
         
         return params
+
+    def isLocationValid(self, graph, latitude, longitude):
+        _, dist = osmnx.get_nearest_node(graph, (latitude, longitude), return_dist=True)
+        if dist > 10000:
+            return False
+        return True
+    
+    def getNearestNode(self, graph, latitude, longitude):
+        return osmnx.get_nearest_node(graph, latitude, longitude)
+
     
     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
         graph, projectedGraph =  self.genMapObj.generateMap()
         
-        if not self.processRouteObj.isLocationValid(graph, srcParams['latitude'], srcParams['longitude']):
+        if not self.isLocationValid(graph, srcParams['latitude'], srcParams['longitude']):
             raise Exception('INVALID SOURCE')
         
-        if not self.processRouteObj.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
+        if not self.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
             raise Exception('INVALID SOURCE')
         
         
-        startNode = self.processRouteObj.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
-        endNode = self.processRouteObj.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
+        startNode = self.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
+        endNode = self.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
         
         
         return self.processRouteObj.getPath(graph, startNode, endNode, percentage, boolIsMax)

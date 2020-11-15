@@ -11,6 +11,7 @@ class ProcessMap(object):
     def __init__(self):
         self.geolocator = Nominatim(user_agent='elena')
         self.genMapObj = GenerateMap()
+        self.processRouteObj = ProcessRoute()
         
     
     def processLocationParams(self, location):
@@ -26,6 +27,23 @@ class ProcessMap(object):
     
     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
         graph, projectedGraph =  self.genMapObj.generateMap()
+        
+        if not self.processRouteObj.isLocationValid(graph, srcParams['latitude'], srcParams['longitude']):
+            raise Exception('INVALID SOURCE')
+        
+        if not self.processRouteObj.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
+            raise Exception('INVALID SOURCE')
+        
+        
+        startNode = self.processRouteObj.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
+        endNode = self.processRouteObj.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
+        
+        
+        return self.processRouteObj.getPath(graph, startNode, endNode, percentage, boolIsMax)
+        # Need to load by the algo and other things to get the main code base up and running
+        
+        # Check if start and end point with in amherst regious
+        
     
     
     

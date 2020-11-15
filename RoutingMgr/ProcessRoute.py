@@ -1,3 +1,11 @@
+import osmnx 
+import pickle as pkl
+
+from osmnx.core import save_to_cache
+from osmnx.core import get_from_cache
+from osmnx.utils import log
+
+
 from MapMgr.ProcessMap import ProcessMap
 
 from flask import request, jsonify
@@ -34,6 +42,22 @@ class ProcessRoute(object):
         resp = jsonify(respParams)
         resp.headers.add('Access-Control-Allow-Origin','*')
         return resp 
+    
+    
+    def isLocationValid(self, graph, latitude, longitude):
+        _, dist = osmnx.get_nearest_node(graph, (latitude, longitude), return_dist=True)
+        if dist > 10000:
+            return False
+        return True
+    
+    def getNearestNode(self, graph, latitude, longitude):
+        return osmnx.get_nearest_node(graph, latitude, longitude)
+
+
+    def getPath(self, graph, startNode, endNode, percetage, boolIsMax):
+        # write function get_From_djikstra from lasamson
+        
+        pass 
         
   
     

@@ -8,7 +8,7 @@ from osmnx.core import get_from_cache
 from osmnx.utils import log
 
 
-from MapMgr.ProcessMap import ProcessMap
+from Sources.MapMgr.ProcessMap import ProcessMap
 
 from flask import request, jsonify
 '''

@@ -33,10 +33,17 @@ import numpy as np
 
 
 from geopy.geocoders import Nominatim
+from Sources.RoutingMgr.ProcessRoute import ProcessRoute
 
-from RoutingMgr.ProcessRoute import ProcessRoute
+#from Sources.RoutingMgr.ProcessRoute import ProcessRoute
 
-from MapMgr.GenerateMap import GenerateMap
+from Sources.MapMgr.GenerateMap import GenerateMap
+#from RoutingMgr.ProcessRoute import ProcessRoute
+
+#from RoutingMgr.ProcessRoute import ProcessRoute
+#from MapMgr.GenerateMap import GenerateMap
+
+#from MapMgr.GenerateMap import GenerateMap
 
 class ProcessMap(object):
     '''

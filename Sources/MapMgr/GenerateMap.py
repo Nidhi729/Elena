@@ -16,7 +16,7 @@ from osmnx.utils import log
 osmnx.config(log_file=True, log_console=True, use_cache=True)
 
 class GenerateMap(object):
-    def __init__(self, params):
+    def __init__(self):
         '''
         Constructor
         '''

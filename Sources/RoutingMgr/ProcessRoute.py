@@ -23,27 +23,27 @@ class ProcessRoute(object):
         self.processMapObj = ProcessMap()
         
     
-    def getRoute(self):
-        payload = request.get_json()
-        
-        source = payload['source']
-        destination  = payload['destination']
-        boolIsMax = bool(payload['maxMin']=='max')
-        percentage = float(payload['percentage'])
-        
-        srcParams = self.processMapObj.processLocationParams(source)
-        destParams = self.processMapObj.processLocationParams(destination)
-        
-        route, dist, elevation = self.processMapObj.findRoute(srcParams, destParams, percentage, boolIsMax)
-        
-        respParams = dict()
-        respParams['route'] = route
-        respParams['distance'] = dist
-        respParams['elevationGain'] = elevation
-        
-        resp = jsonify(respParams)
-        resp.headers.add('Access-Control-Allow-Origin','*')
-        return resp 
+#     def getRoute(self):
+#         payload = request.get_json()
+#         
+#         source = payload['source']
+#         destination  = payload['destination']
+#         boolIsMax = bool(payload['maxMin']=='max')
+#         percentage = float(payload['percentage'])
+#         
+#         srcParams = self.processMapObj.processLocationParams(source)
+#         destParams = self.processMapObj.processLocationParams(destination)
+#         
+#         route, dist, elevation = self.processMapObj.findRoute(srcParams, destParams, percentage, boolIsMax)
+#         
+#         respParams = dict()
+#         respParams['route'] = route
+#         respParams['distance'] = dist
+#         respParams['elevationGain'] = elevation
+#         
+#         resp = jsonify(respParams)
+#         resp.headers.add('Access-Control-Allow-Origin','*')
+#         return resp 
     
     
 #     

@@ -40,9 +40,9 @@ class ElenaApp():
         route, dist, elevation = self.findRoute(srcParams, destParams, percentage, boolIsMax)
         
         respParams = dict()
-        respParams['route'] = route
-        respParams['distance'] = dist
-        respParams['elevationGain'] = elevation
+        respParams['Route'] = route
+        respParams['Distance'] = dist
+        respParams['Elevation Gain'] = elevation
         
         resp = jsonify(respParams)
         resp.headers.add('Access-Control-Allow-Origin','*')
@@ -57,11 +57,11 @@ class ElenaApp():
         if not self.processMapObj.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
             raise Exception('INVALID DESTINATION')
         
-        
+        print('THIS IS SSSSSSSSSSSS')
         startNode = self.processMapObj.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
         endNode = self.processMapObj.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
         
-        
+        print('THIS IS DDDDD')
         return self.processRouteObj.getPath(graph, startNode, endNode, percentage, boolIsMax)
 
     

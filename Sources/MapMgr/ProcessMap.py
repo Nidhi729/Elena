@@ -1,4 +1,4 @@
-import osmnx
+#import osmnx
 
 import osmnx as ox
 import pickle as pkl
@@ -57,7 +57,7 @@ class ProcessMap(object):
     
     def processLocationParams(self, location):
         locationParams = location.split(',')
-        
+        print(self.geolocator.geocode(location))
         params = dict()
         params['town'] = locationParams[1].strip()
         params['state'] = locationParams[2].strip()
@@ -67,14 +67,16 @@ class ProcessMap(object):
         return params
 
     def isLocationValid(self, graph, latitude, longitude):
-        _, dist = osmnx.get_nearest_node(graph, (latitude, longitude), return_dist=True)
+        _, dist = ox.get_nearest_node(graph, (latitude, longitude), return_dist=True)
         if dist > 10000:
             return False
         return True
     
     def getNearestNode(self, graph, latitude, longitude):
-        return osmnx.get_nearest_node(graph, latitude, longitude)
-    
+        print('333',type(latitude), type(longitude))
+        val =  ox.get_nearest_node(graph, (latitude, longitude))
+        print('1111')
+        return val
     
     
     

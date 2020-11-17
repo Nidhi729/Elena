@@ -2,7 +2,7 @@
 Elevation-based Navigation
 
 # Python Version
-Python 3.6
+Python 2.7
 
 # Required Libraries
 pip install -r requirements.txt

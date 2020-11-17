@@ -27,23 +27,28 @@ class ElenaApp():
         
         
     def getRoute(self):
-        payload = request.get_json()
-        print(payload)
-        source = payload['Source']
-        destination  = payload['Destination']
-        boolIsMax = bool(payload['Max_min']=='max')
-        percentage = float(payload['Percentage'])
+        try:
+            payload = request.get_json()
+            source = payload['Source']
+            destination  = payload['Destination']
+            boolIsMax = bool(payload['Max_min']=='max')
+            percentage = float(payload['Percentage'])
+            
+            srcParams = self.processMapObj.getLocationParams(source)
+            destParams = self.processMapObj.getLocationParams(destination)
+            
+            route, dist, elevation = self.findRoute(srcParams, destParams, percentage, boolIsMax)
+            
+            respParams = dict()
+            respParams['Route'] = route
+            respParams['Distance'] = dist
+            respParams['Elevation Gain'] = elevation
         
-        srcParams = self.processMapObj.processLocationParams(source)
-        destParams = self.processMapObj.processLocationParams(destination)
-        
-        route, dist, elevation = self.findRoute(srcParams, destParams, percentage, boolIsMax)
-        
-        respParams = dict()
-        respParams['Route'] = route
-        respParams['Distance'] = dist
-        respParams['Elevation Gain'] = elevation
-        
+        except Exception as err:
+            print(err)
+            respParams = dict()
+            respParams['Error'] = 'Failed to fetch route. Error : %s' %err 
+            
         resp = jsonify(respParams)
         resp.headers.add('Access-Control-Allow-Origin','*')
         return resp 
@@ -57,11 +62,9 @@ class ElenaApp():
         if not self.processMapObj.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
             raise Exception('INVALID DESTINATION')
         
-        print('THIS IS SSSSSSSSSSSS')
         startNode = self.processMapObj.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
         endNode = self.processMapObj.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
         
-        print('THIS IS DDDDD')
         return self.processRouteObj.getPath(graph, startNode, endNode, percentage, boolIsMax)
 
     

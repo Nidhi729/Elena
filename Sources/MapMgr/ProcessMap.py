@@ -1,49 +1,11 @@
-#import osmnx
-
-import osmnx as ox
-import pickle as pkl
-from pathlib import Path
-import os
-import requests
-
-import math
-import time
-import requests
-import pandas as pd
-import networkx as nx
-
-from osmnx.core import save_to_cache
-from osmnx.core import get_from_cache
-from osmnx.utils import log
-
-import sys
 import osmnx as ox
 import networkx as nx
-import numpy as np
-from heapq import *
-from itertools import count
-
-from heapq import *
-from collections import OrderedDict
-import numpy as np
-
-
-
-
-
-
+import logging
+import heapq
+import collections
 from geopy.geocoders import Nominatim
-#from Sources.RoutingMgr.ProcessRoute import ProcessRoute
-
-#from Sources.RoutingMgr.ProcessRoute import ProcessRoute
 
 from Sources.MapMgr.GenerateMap import GenerateMap
-#from RoutingMgr.ProcessRoute import ProcessRoute
-
-#from RoutingMgr.ProcessRoute import ProcessRoute
-#from MapMgr.GenerateMap import GenerateMap
-
-#from MapMgr.GenerateMap import GenerateMap
 
 class ProcessMap(object):
     '''
@@ -52,39 +14,37 @@ class ProcessMap(object):
     def __init__(self):
         self.geolocator = Nominatim(user_agent='elena')
         self.genMapObj = GenerateMap()
-        #self.processRouteObj = ProcessRoute()
         
     
-    def processLocationParams(self, location):
-        locationParams = location.split(',')
-        print(self.geolocator.geocode(location))
-        params = dict()
-        params['town'] = locationParams[1].strip()
-        params['state'] = locationParams[2].strip()
-        params['latitude'] = self.geolocator.geocode(location).latitude
-        params['longitude'] = self.geolocator.geocode(location).longitude
+    def getLocationParams(self, location):
+        try:
+            locationParams = location.split(',') 
+            params = dict()
+            params['town'] = locationParams[1].strip()
+            params['state'] = locationParams[2].strip()
+            params['latitude'] = self.geolocator.geocode(location).latitude
+            params['longitude'] = self.geolocator.geocode(location).longitude
+            return params
+        except Exception as err:
+            raise Exception('INPUT NOT IN VALID FORMATE. Desired format Address,Town,State. Error %s' %err)
         
-        return params
-
+            
     def isLocationValid(self, graph, latitude, longitude):
+        logging.log(20,'Validating if point is valid')
         _, dist = ox.get_nearest_node(graph, (latitude, longitude), return_dist=True)
-        if dist > 10000:
+        if dist > 10000: # Distance from the nearest node
+            logging.log(40,'The location is not within 10000 nodes from the nearest node')
             return False
+        logging.log(20,'Valid location')
         return True
     
     def getNearestNode(self, graph, latitude, longitude):
-        print('333',type(latitude), type(longitude))
-        val =  ox.get_nearest_node(graph, (latitude, longitude))
-        print('1111')
-        return val
+        return ox.get_nearest_node(graph, (latitude, longitude))
     
-    
-    
-    def getElevationGain(self, graph, start, end):
-        if start == end:
+    def getElevationGain(self, graph, startNode, endNode):
+        if startNode == endNode:
             return 0
-        return graph.nodes[start]['elevation'] - graph.nodes[end]['elevation']
-
+        return graph.nodes[startNode]['elevation'] - graph.nodes[endNode]['elevation']
 
     def getLength(self,graph, start, end):
         return graph.edges[start, end, 0]['length']
@@ -140,14 +100,14 @@ class ProcessMap(object):
 
     def getShortestPath(self, graph, start, end, option='length'):
         queue = []
-        heappush(queue, (0, start))
+        heapq.heappush(queue, (0, start))
         revPath = {}
         cost = {}
         revPath[start] = None
         cost[start] = 0
     
         while len(queue) > 0:
-            (val, current) = heappop(queue)
+            (val, current) = heapq.heappop(queue)
             if current == end:
                 break
             for cur, nxt, data in graph.edges(current, data=True):
@@ -161,7 +121,7 @@ class ProcessMap(object):
                     cur_cost += curCost
                 if nxt not in cost or cur_cost < cost[nxt]:
                     cost[nxt] = cur_cost
-                    heappush(queue, (cur_cost, nxt))
+                    heapq.heappush(queue, (cur_cost, nxt))
                     revPath[nxt] = current
     
         return self.generatePath(revPath, start, end)
@@ -191,7 +151,7 @@ class ProcessMap(object):
                 continue
             elevation_gain[self.getPathElevation(G, p)] = p
     
-        ordered_paths = OrderedDict(sorted(elevation_gain.items()))
+        ordered_paths = collections.OrderedDict(sorted(elevation_gain.items()))
     
         keys = ordered_paths.keys()
     

@@ -3,19 +3,10 @@ import heapq
 import collections
 import pickle as pkl
 
-from osmnx.core import save_to_cache
-from osmnx.core import get_from_cache
-from osmnx.utils import log
-
 
 from Sources.MapMgr.ProcessMap import ProcessMap
 
 from flask import request, jsonify
-'''
-Note this file is similar to the Algorithm,py file | copy paste the code over here
-
-'''
-
 
 class ProcessRoute(object):
 

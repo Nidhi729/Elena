@@ -80,5 +80,5 @@ class ProcessMap(object):
 
     def getDistFromPercentage(self,min_distance, percent):
         if percent > 1:
-            return (percent) / 100.0 * min_distances
+            return (percent) / 100.0 * min_distance
         return (percent) * min_distance

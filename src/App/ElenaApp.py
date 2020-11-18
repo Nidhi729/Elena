@@ -78,7 +78,7 @@ if __name__ == '__main__':
     # Application Object
     appObj = app.get_app()
     # Add URL Rules
-    appObj.add_url_rule('/get_route','route',app.getRoute,methods = ['POST'])
+    appObj.add_url_rule('/getRoute','route',app.getRoute,methods = ['POST'])
     # Execute the rule
     appObj.run(port=8080)
     

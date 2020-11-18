@@ -381,3 +381,14 @@ Name: elevation, Length: 816, dtype: int64
 2020-11-18 01:36:37,284 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
 2020-11-18 01:36:37,292 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
 2020-11-18 01:36:37,300 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-18 01:50:23,472 INFO osmnx Configured osmnx
+2020-11-18 01:50:39,895 INFO osmnx Configured osmnx
+2020-11-18 01:51:56,396 INFO osmnx Configured osmnx
+2020-11-18 01:52:02,486 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-18 01:52:02,496 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-18 01:52:02,505 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-18 01:52:02,513 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-18 01:52:25,943 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-18 01:52:25,952 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-18 01:52:25,962 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-18 01:52:25,971 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds

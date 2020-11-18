@@ -48,28 +48,7 @@ class ProcessMap(object):
 
     def getLength(self,graph, start, end):
         return graph.edges[start, end, 0]['length']
-     
-#     
-#     def getpath(self, revPath, origin, destination):
-#         route_by_length_minele = []
-#         p = destination
-#         route_by_length_minele.append(p)
-#         while p != origin:
-#             p = revPath[p]
-#             route_by_length_minele.append(p)
-#         route_by_length_minele = route_by_length_minele[::-1]
-#         return route_by_length_minele
-#     
-    
-#     def generatePath(self, revPath, start, end):
-#         path = []
-#         n = end
-#         path.append(n)
-#         while n != start:
-#             n = revPath[n]
-#             path.append(n)
-#         return path[::-1]
-    
+
     
     def getPathElevation(self, graph, path):
         total_elevation = 0
@@ -98,96 +77,8 @@ class ProcessMap(object):
         return coord
 
 
-#     def getShortestPath(self, graph, start, end, option='length'):
-#         queue = []
-#         heapq.heappush(queue, (0, start))
-#         revPath = {}
-#         cost = {}
-#         revPath[start] = None
-#         cost[start] = 0
-#     
-#         while len(queue) > 0:
-#             (val, current) = heapq.heappop(queue)
-#             if current == end:
-#                 break
-#             for cur, nxt, data in graph.edges(current, data=True):
-#                 cur_cost = cost[current]
-#                 if option == 'length':
-#                     curCost = self.getLength(graph, cur, nxt)
-# #                 elif option == 'elevation':
-# #                     # this part mostly doesn't even work
-# #                     curCost = self.getPathElevation(graph, cur, nxt)
-#                 if curCost > 0:
-#                     cur_cost += curCost
-#                 if nxt not in cost or cur_cost < cost[nxt]:
-#                     cost[nxt] = cur_cost
-#                     heapq.heappush(queue, (cur_cost, nxt))
-#                     revPath[nxt] = current
-#     
-#         return self.generatePath(revPath, start, end)
-#     
-
-#     def getEucledeanDistance(self, graph, start, end):
-#         x1, y1 = graph.nodes()[start]['x'], graph.nodes()[start]['y']
-#         x2, y2 = graph.nodes()[end]['x'], graph.nodes()[end]['y']
-#     
-#         dist = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
-#     
-#         return dist
-#     
-# 
-#     def getFromAllPaths(self,G, start, end, percent, max_ele=True):
-#         min_distance = self.getPathLength(G, self.getShortestPath(G, start, end))
-#         shortest_paths = list(nx.all_shortest_paths(G, start, end))
-#     
-#         print(percent)
-#         max_path_length = (1.0 + float(percent)) * min_distance
-#     
-#         elevation_gain = {}
-#         for p in shortest_paths:
-#             path_dist = self.getPathLength(G, p)
-#             if path_dist > max_path_length:
-#                 print(min_distance, max_path_length)
-#                 continue
-#             elevation_gain[self.getPathElevation(G, p)] = p
-#     
-#         ordered_paths = collections.OrderedDict(sorted(elevation_gain.items()))
-#     
-#         keys = ordered_paths.keys()
-#     
-#         if max_ele:
-#             key = max(elevation_gain.iterkeys(), key=(lambda key: elevation_gain[key]))
-#         else:
-#             key = min(elevation_gain.iterkeys(), key=(lambda key: elevation_gain[key]))
-#     
-#         return elevation_gain[key], self.getPathElevation(G, elevation_gain[key]), self.getPathLength(G, elevation_gain[key])
-#     
 
     def getDistFromPercentage(self,min_distance, percent):
         if percent > 1:
-            return (percent) / 100.0 * min_distance
+            return (percent) / 100.0 * min_distances
         return (percent) * min_distance
-
-    
-#     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
-#         graph, projectedGraph =  self.genMapObj.generateMap()
-#         
-#         if not self.isLocationValid(graph, srcParams['latitude'], srcParams['longitude']):
-#             raise Exception('INVALID SOURCE')
-#         
-#         if not self.isLocationValid(graph, destParams['latitude'], destParams['longitude']):
-#             raise Exception('INVALID DESTINATION')
-#         
-#         
-#         startNode = self.getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
-#         endNode = self.getNearestNode(graph, destParams['latitude'], destParams['longitude'])
-#         
-#         
-#         return self.processRouteObj.getPath(graph, startNode, endNode, percentage, boolIsMax)
-#         # Need to load by the algo and other things to get the main code base up and running
-#         
-#         # Check if start and end point with in amherst regious
-#         
-    
-    
-    

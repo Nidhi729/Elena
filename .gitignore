@@ -5,3 +5,4 @@ build/*
 dist/*
 *.egg*
 *.log
+node_modules/*

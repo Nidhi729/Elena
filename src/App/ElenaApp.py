@@ -2,9 +2,9 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 
-from Sources.RoutingMgr.ProcessRoute import ProcessRoute
-from Sources.MapMgr.GenerateMap import GenerateMap
-from Sources.MapMgr.ProcessMap import ProcessMap
+from src.RoutingMgr.ProcessRoute import ProcessRoute
+from src.MapMgr.GenerateMap import GenerateMap
+from src.MapMgr.ProcessMap import ProcessMap
 
 import logging
 

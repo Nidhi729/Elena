@@ -5,7 +5,7 @@ import heapq
 import collections
 from geopy.geocoders import Nominatim
 
-from Sources.MapMgr.GenerateMap import GenerateMap
+from src.MapMgr.GenerateMap import GenerateMap
 
 class ProcessMap(object):
     '''

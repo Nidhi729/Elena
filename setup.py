@@ -2,13 +2,13 @@ import os
 
 from setuptools import setup, find_packages
 
-import Sources
+import src
 
 
 pkg_scripts = []
 
 setup(
-    name=Sources.__name__,
+    name=src.__name__,
         long_description='ELena',
 
    
@@ -18,7 +18,7 @@ setup(
     namespace_packages=[],
     packages=find_packages(),
     include_package_data=True,
-    package_data={'Sources' : []},
+    package_data={'src' : []},
 
 
 

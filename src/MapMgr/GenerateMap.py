@@ -15,7 +15,7 @@ from osmnx.utils import log
 
 osmnx.config(log_file=True, log_console=True, use_cache=True)
 
-from Sources.MapMgr.Interface import GenerateMapInterface
+from src.MapMgr.Interface import GenerateMapInterface
 
 
 class GenerateMap():

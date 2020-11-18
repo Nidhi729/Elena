@@ -1,7 +1,7 @@
 import heapq
 import collections
 
-from Sources.MapMgr.ProcessMap import ProcessMap
+from src.MapMgr.ProcessMap import ProcessMap
 
 class ProcessRoute(object):
 

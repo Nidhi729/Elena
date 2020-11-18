@@ -7,6 +7,7 @@ from src.MapMgr.GenerateMap import GenerateMap
 from src.MapMgr.ProcessMap import ProcessMap
 
 import logging
+from flask_swagger import swagger
 
 class ElenaApp():
     
@@ -27,6 +28,9 @@ class ElenaApp():
      
         CORS(self.app)
         
+        
+    def spec(self):
+        return jsonify(swagger(self.app))
         
     def getRoute(self):
         try:
@@ -52,8 +56,10 @@ class ElenaApp():
             respParams = dict()
             respParams['Error'] = 'Failed to fetch route. Error : %s' %err 
             
+        print(respParams)
         resp = jsonify(respParams)
         resp.headers.add('Access-Control-Allow-Origin','*')
+        
         return resp 
         
     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
@@ -77,6 +83,8 @@ if __name__ == '__main__':
 #     routeObj = ProcessRoute()
     # Application Object
     appObj = app.get_app()
+    
+    appObj.add_url_rule('/','swagger',app.spec)
     # Add URL Rules
     appObj.add_url_rule('/getRoute','route',app.getRoute,methods = ['POST'])
     # Execute the rule

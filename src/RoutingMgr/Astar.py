@@ -56,7 +56,7 @@ class Astar(object):
                     path.append(current)
                     current = parent[current]
                 path.reverse()
-                return self.processMapObj.getLatLong(graph, path), self.processMapObj.getPathLength(graph, path), self.processMapObj.getPathElevation(graph, path)
+                return self.processMapObj.getCoordinates(graph, path), self.processMapObj.getPathLength(graph, path), self.processMapObj.getPathElevation(graph, path)
 
             closed.add(current)
 

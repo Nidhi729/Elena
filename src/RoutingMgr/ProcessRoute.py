@@ -11,17 +11,25 @@ class ProcessRoute(object):
         self.astarObj = Astar()
      
     def getPath(self, graph, startNode, endNode, percentage, boolIsMax):
-        pathDjikstra, distanceDjikstra, elevationDjikstra = self.djikstraObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
-        #pathAstar, distanceAstar, elevationAstar = self.astarObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
-        pathAstar, distanceAstar, elevationAstar = float('-inf'),float('-inf'),float('inf')
-    
-        if boolIsMax:
-            if(elevationDjikstra > elevationAstar):
-                return pathDjikstra, distanceDjikstra, elevationDjikstra
+        
+        try:
+                
+            pathDjikstra, distanceDjikstra, elevationDjikstra = self.djikstraObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
+            pathAstar, distanceAstar, elevationAstar = self.astarObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
+            #pathAstar, distanceAstar, elevationAstar = float('-inf'),float('-inf'),float('inf')
+        
+            if boolIsMax:
+            #   return pathDjikstra, distanceDjikstra, elevationDjikstra
+                if(elevationDjikstra > elevationAstar):
+                    return pathDjikstra, distanceDjikstra, elevationDjikstra
+                else:
+                    return pathAstar, distanceAstar, elevationAstar
             else:
-                return pathAstar, distanceAstar, elevationAstar
-        else:
-            if (elevationDjikstra < elevationAstar):
-                return pathDjikstra, distanceDjikstra, elevationDjikstra
-            else:
-                return pathAstar, distanceAstar, elevationAstar    
+                #return pathDjikstra, distanceDjikstra, elevationDjikstra
+                
+                if (elevationDjikstra < elevationAstar):
+                    return pathDjikstra, distanceDjikstra, elevationDjikstra
+                else:
+                    return pathAstar, distanceAstar, elevationAstar    
+        except Exception as err:
+            raise Exception('Failed to fetch path. Error %s'%err)

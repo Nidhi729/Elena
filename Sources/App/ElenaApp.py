@@ -6,6 +6,7 @@ from Sources.RoutingMgr.ProcessRoute import ProcessRoute
 from Sources.MapMgr.GenerateMap import GenerateMap
 from Sources.MapMgr.ProcessMap import ProcessMap
 
+import logging
 
 class ElenaApp():
     
@@ -23,11 +24,13 @@ class ElenaApp():
     def initialize_app(self):
         self.app = Flask(__name__)
         # CORS
+     
         CORS(self.app)
         
         
     def getRoute(self):
         try:
+            
             payload = request.get_json()
             source = payload['Source']
             destination  = payload['Destination']
@@ -54,7 +57,7 @@ class ElenaApp():
         return resp 
         
     def findRoute(self, srcParams, destParams, percentage, boolIsMax):
-        graph, projectedGraph =  self.genMapObj.generateMap()
+        graph =  self.genMapObj.generateMap()
         
         if not self.processMapObj.isLocationValid(graph, srcParams['latitude'], srcParams['longitude']):
             raise Exception('INVALID SOURCE')
@@ -70,6 +73,7 @@ class ElenaApp():
     
 if __name__ == '__main__':
     app = ElenaApp()
+    
 #     routeObj = ProcessRoute()
     # Application Object
     appObj = app.get_app()

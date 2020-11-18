@@ -10,3 +10,341 @@
 2020-11-17 00:07:46,001 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
 2020-11-17 00:07:46,010 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
 2020-11-17 00:07:46,019 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 13:29:43,566 INFO osmnx Configured osmnx
+2020-11-17 15:48:51,258 INFO osmnx Configured osmnx
+2020-11-17 15:49:48,222 INFO osmnx Configured osmnx
+2020-11-17 15:50:13,031 INFO osmnx Configured osmnx
+2020-11-17 15:58:40,635 INFO osmnx Configured osmnx
+2020-11-17 15:58:47,206 INFO osmnx Configured osmnx
+2020-11-17 15:58:58,108 INFO osmnx Configured osmnx
+2020-11-17 16:00:24,148 INFO osmnx Configured osmnx
+2020-11-17 16:00:55,790 INFO osmnx Configured osmnx
+2020-11-17 16:01:04,764 INFO osmnx Configured osmnx
+2020-11-17 16:04:47,413 INFO osmnx Configured osmnx
+2020-11-17 16:05:02,956 INFO osmnx Configured osmnx
+2020-11-17 16:05:41,323 INFO osmnx Configured osmnx
+2020-11-17 16:05:52,473 INFO osmnx Configured osmnx
+2020-11-17 17:16:38,491 INFO osmnx Configured osmnx
+2020-11-17 17:17:10,073 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:17:10,082 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:17:10,091 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:17:10,099 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:21:56,724 INFO osmnx Configured osmnx
+2020-11-17 17:22:02,605 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:22:02,614 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:22:02,623 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 17:22:02,631 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 19:52:39,460 INFO osmnx Configured osmnx
+2020-11-17 19:53:18,879 INFO osmnx Configured osmnx
+2020-11-17 19:53:31,440 INFO osmnx Configured osmnx
+2020-11-17 19:53:39,262 INFO osmnx Configured osmnx
+2020-11-17 19:54:01,369 INFO osmnx Configured osmnx
+2020-11-17 19:54:18,574 INFO osmnx Configured osmnx
+2020-11-17 20:09:56,875 INFO osmnx Configured osmnx
+2020-11-17 20:10:41,627 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:10:41,636 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:10:41,645 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:10:41,654 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:11:07,634 INFO osmnx Configured osmnx
+2020-11-17 20:11:11,832 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:11:11,842 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:11:11,851 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:11:11,860 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:13:28,571 INFO osmnx Configured osmnx
+2020-11-17 20:13:40,154 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:13:40,164 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:13:40,172 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:13:40,181 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:04,901 INFO osmnx Configured osmnx
+2020-11-17 20:18:09,698 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:09,708 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:09,716 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:09,725 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:27,341 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:27,349 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:27,360 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:18:27,369 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:19:32,180 INFO osmnx Configured osmnx
+2020-11-17 20:19:37,192 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:19:37,202 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:19:37,210 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:19:37,218 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:19:51,938 INFO osmnx Configured osmnx
+2020-11-17 20:20:07,054 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:20:07,064 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:20:07,073 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:20:07,082 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:21:08,816 INFO osmnx Configured osmnx
+2020-11-17 20:21:14,465 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:21:14,476 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:21:14,484 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:21:14,492 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:22:18,101 INFO osmnx Configured osmnx
+2020-11-17 20:22:24,712 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:22:24,722 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:22:24,731 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:22:24,739 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:22:52,534 INFO osmnx Configured osmnx
+2020-11-17 20:23:00,353 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:23:00,362 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:23:00,387 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 20:23:00,401 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:32:45,393 INFO osmnx Configured osmnx
+2020-11-17 20:33:36,377 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 20:33:36,397 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:33:36,405 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:33:36,413 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:35:41,543 INFO osmnx Configured osmnx
+2020-11-17 20:35:47,848 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 20:35:47,866 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 20:35:47,886 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 20:35:47,918 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.03 seconds
+2020-11-17 20:35:53,163 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:35:53,173 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:35:53,184 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:35:53,192 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:39:11,956 INFO osmnx Configured osmnx
+2020-11-17 20:39:16,844 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:39:16,853 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:39:16,862 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:39:16,870 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:41:29,871 INFO osmnx Configured osmnx
+2020-11-17 20:41:32,846 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:41:32,855 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:41:32,864 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 20:41:32,872 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:13:52,044 INFO osmnx Configured osmnx
+2020-11-17 22:14:00,079 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:00,088 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:00,096 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:00,108 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:38,221 INFO osmnx Configured osmnx
+2020-11-17 22:14:55,703 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:55,713 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:55,723 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:14:55,731 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:15,368 INFO osmnx Configured osmnx
+2020-11-17 22:16:32,392 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:32,401 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:32,409 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:32,418 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:43,915 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:43,924 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:16:43,935 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:43,942 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:16:57,398 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:57,407 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:16:57,415 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:16:57,423 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:04,080 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:04,088 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:04,100 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:04,109 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:12,144 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:12,155 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:12,165 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:12,175 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:16,695 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:16,703 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:16,712 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:17:16,720 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:25,189 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:17:25,200 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:25,211 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:17:25,223 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:32,870 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:17:32,879 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:17:32,887 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:17:32,896 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:18:49,081 INFO osmnx Configured osmnx
+2020-11-17 22:18:57,052 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:18:57,061 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:18:57,070 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:18:57,078 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:19:07,309 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:19:07,318 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:19:07,326 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:19:07,335 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:20:34,029 INFO osmnx Configured osmnx
+2020-11-17 22:20:40,065 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:20:40,076 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:20:40,084 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:20:40,092 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:23:34,624 INFO osmnx Configured osmnx
+2020-11-17 22:23:39,781 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:23:39,790 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:23:39,799 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:23:39,807 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:24:23,983 INFO osmnx Configured osmnx
+2020-11-17 22:24:27,805 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:24:27,815 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:24:27,822 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:24:27,830 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:25:36,093 INFO osmnx Configured osmnx
+2020-11-17 22:25:40,118 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:25:40,128 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:25:40,137 INFO osmnx Found nearest node (66613374) to point (42.3758161, -72.5196763) in 0.01 seconds
+2020-11-17 22:25:40,151 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:28:51,254 INFO osmnx Configured osmnx
+2020-11-17 22:29:07,191 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:07,201 INFO osmnx Found nearest node (66775442) to point (40.187362, -105.131657) in 0.01 seconds
+2020-11-17 22:29:26,093 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:26,102 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:26,110 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:26,123 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:33,650 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:33,659 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:29:33,668 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:33,677 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:29:53,965 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:53,974 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:29:53,982 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:29:53,991 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:30:13,199 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:30:13,207 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:30:13,216 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:30:13,224 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:30:19,860 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:30:19,868 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:30:19,876 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:30:19,884 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:31:15,717 INFO osmnx Configured osmnx
+2020-11-17 22:31:20,792 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:31:20,802 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:31:20,810 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:31:20,819 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:32:23,135 INFO osmnx Configured osmnx
+2020-11-17 22:32:28,120 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:32:28,129 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:32:28,137 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:32:28,145 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:32:42,220 INFO osmnx Configured osmnx
+2020-11-17 22:33:01,079 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.03 seconds
+2020-11-17 22:33:01,097 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 22:33:01,122 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 22:33:01,150 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 22:33:25,935 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 22:33:25,950 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:33:26,013 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.05 seconds
+2020-11-17 22:33:26,034 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 22:33:31,547 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:33:31,556 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:33:31,565 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:33:31,575 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:33:36,973 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:33:36,981 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:33:36,990 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:33:36,998 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:34:10,635 INFO osmnx Configured osmnx
+2020-11-17 22:34:16,753 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:34:16,762 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:34:16,771 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:34:16,780 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:40:28,645 INFO osmnx Configured osmnx
+2020-11-17 22:40:35,599 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:40:35,608 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:40:35,618 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:40:35,626 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:40:55,364 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:40:55,372 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 22:40:55,381 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 22:40:55,389 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:05:36,391 INFO osmnx Configured osmnx
+2020-11-17 23:05:42,674 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:42,684 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:05:42,693 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:42,718 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 23:05:52,714 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:52,723 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:05:52,731 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:52,739 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:05:58,101 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:58,110 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:05:58,118 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:05:58,126 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:20:36,395 INFO osmnx Configured osmnx
+2020-11-17 23:20:57,795 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:20:57,805 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:20:57,814 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:20:57,823 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:21:04,139 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:21:04,151 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:21:04,159 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:21:04,169 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:21:26,813 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 23:21:26,823 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:21:26,837 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:21:26,850 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:22:16,731 INFO osmnx Configured osmnx
+2020-11-17 23:22:22,631 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:22:22,642 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:22:22,651 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:22:22,660 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:22:45,576 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:22:45,585 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:22:45,595 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:22:45,604 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:23:03,917 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:23:03,927 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:23:03,943 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 23:23:03,952 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:24:15,959 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 23:24:15,985 INFO osmnx Found nearest node (66775442) to point (40.187362, -105.131657) in 0.03 seconds
+2020-11-17 23:24:44,217 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.10 seconds
+2020-11-17 23:24:44,239 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 23:24:44,259 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 23:24:44,276 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.02 seconds
+2020-11-17 23:26:51,355 INFO osmnx Configured osmnx
+2020-11-17 23:27:04,794 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.02 seconds
+2020-11-17 23:27:04,805 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:27:04,815 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:27:04,825 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:01,570 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:01,579 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:01,588 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:01,597 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:23,824 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:23,834 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:23,843 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:23,853 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:50,705 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:50,715 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:50,724 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:50,733 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:59,129 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:59,140 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:28:59,149 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:28:59,163 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:29:26,874 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:29:26,884 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:29:26,894 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:29:26,904 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:30:38,292 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:30:38,304 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:30:38,375 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.07 seconds
+2020-11-17 23:30:38,385 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:30:44,161 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:30:44,171 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:30:44,181 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:30:44,190 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:31:39,509 INFO osmnx Configured osmnx
+2020-11-17 23:31:49,144 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:31:49,154 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:31:49,164 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:31:49,173 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:32:17,693 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:32:17,702 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:32:17,712 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:32:17,721 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:35:15,872 INFO osmnx Configured osmnx
+2020-11-17 23:35:35,302 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:35:35,312 INFO osmnx Found nearest node (66775442) to point (40.187362, -105.131657) in 0.01 seconds
+2020-11-17 23:47:48,395 INFO osmnx Configured osmnx
+2020-11-17 23:48:37,413 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:48:37,423 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:48:37,431 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:48:37,439 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:48:44,572 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:48:44,580 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds
+2020-11-17 23:48:44,588 INFO osmnx Found nearest node (66701452) to point (42.3869382, -72.52991477067445) in 0.01 seconds
+2020-11-17 23:48:44,596 INFO osmnx Found nearest node (66711889) to point (42.3497246, -72.5279153) in 0.01 seconds

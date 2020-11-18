@@ -15,71 +15,47 @@ from osmnx.utils import log
 
 osmnx.config(log_file=True, log_console=True, use_cache=True)
 
-class GenerateMap(object):
+from Sources.MapMgr.Interface import GenerateMapInterface
+
+
+class GenerateMap():
     def __init__(self):
-        '''
-        Constructor
-        '''
+        self.PklFileName = '%s_%s.pkl'
+        self.OpenElevationApiURL = 'https://api.open-elevation.com/api/v1/lookup?locations={}'
+
         
-        pass 
+    def generateGraphPlot(self, graph):
+        osmnx.log('Generating graph based on elevation !')
+        nc = osmnx.plot.get_node_colors_by_attr(graph, 'elevation',cmap='plasma')
+        osmnx.plot_graph(graph, node_color=nc,node_size=5,edge_color='#333333', bgcolor='k')
+        
     
     def generateMap(self, city='Amherst', state='MA'):
-        mapFileName = '%s_%s.pkl'%(city,state)
-        projectedFileName = '%s_%s_projection.pkl' %(city,state)
-        
-        projectedFilePath = pathlib.Path(projectedFileName)
+        mapFileName = self.PklFileName%(city,state)
         mapFilePath = pathlib.Path(mapFileName)
         
-        if projectedFilePath.is_file() and mapFilePath.is_file():
-            return pkl.load(open(mapFileName, "rb")), pkl.load(open(projectedFileName, "rb"))
+        if mapFilePath.is_file():
+            return pkl.load(open(mapFileName, "rb"))
         else:
             params = dict()
             params['city']  = city
             params['state'] = state
             params['country'] = 'USA'
-            # Open Street Map Api
+            # Osmnx to get the map
             graph = osmnx.graph_from_place(params, network_type='drive')
             graph = self.add_node_elevations_open(graph)
             graph = osmnx.add_edge_grades(graph)
             # Dump the file
             pkl.dump(graph, open(mapFileName, "wb"))
-            graph_proj = osmnx.project_graph(graph)
-            pkl.dump(graph_proj, open(projectedFileName, "wb"))
-            return graph, graph_proj
+            return graph
     
     
-#     
-#     def get_map(city, state):
-#         file_name = "%s%s.pkl" % (city, state)
-#         projected_file_name = "%s%s_projected.pkl" % (city, state)
-#     
-#         projected_file_path = Path(projected_file_name)
-#         file_path = Path(file_name)
-#     
-#         if projected_file_path.is_file() and file_path.is_file():
-#             return pkl.load(open(file_name, "rb")), pkl.load(open(projected_file_name, "rb"))
-#         else:
-#             query = {'city': city, 'state': state, 'country': 'USA'}
-#             graph = ox.graph_from_place(query, network_type='drive')
-#             graph = add_node_elevations_open(graph)
-#             graph = ox.add_edge_grades(graph)
-#             log(graph.nodes[5637885552])
-#             pkl.dump(graph, open(file_name, "wb"))
-#             graph_proj = ox.project_graph(graph)
-#             pkl.dump(graph_proj, open(projected_file_name, "wb"))
-#             return graph, graph_proj
-#     
-    
-#     def check_point_within_city(self,start, end):
-#         os.graph_from_place
-#     
-#     
     def add_node_elevations_open(self, G, max_locations_per_batch=180,
                                  pause_duration=0.02):  # pragma: no cover
     
         url_template = 'https://api.open-elevation.com/api/v1/lookup?locations={}'
-    
         node_points = pd.Series({node: '{:.5f},{:.5f}'.format(data['y'], data['x']) for node, data in G.nodes(data=True)})
+        
         log('Requesting node elevations from the API in {} calls.'.format(
             math.ceil(len(node_points) / max_locations_per_batch)))
     
@@ -125,15 +101,10 @@ class GenerateMap(object):
         log('Added elevation data to all nodes.')
     
         return G
-    
-    
-    def clean(self, city, state):
+
+    def clearPklFiles(self, city, state):
         mapFileName = '%s_%s.pkl'%(city,state)
         projectedFileName = '%s_%s_projection.pkl' %(city,state)
     
         os.remove(mapFileName)
         os.remove(projectedFileName)
-    
-    
-#     get_map('Amherst', 'MA')
-#     # clean('Amherst', 'MA')

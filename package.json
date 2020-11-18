@@ -1,0 +1,49 @@
+{
+  "name": "elena",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.6.1",
+    "@material-ui/icons": "^3.0.1",
+    "@material-ui/lab": "^3.0.0-alpha.30",
+    "leaflet": "^1.3.4",
+    "leaflet-routing-machine": "^3.2.12",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "recharts": "^1.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "description": "## What is EleNA? EleNa (Elevation-based Navigation) is a web application that finds the an optimal route between two points by taking not only distance, but also elevation gain into consideration. EleNa would be used by runners, bikers, and hikers alike in order to find routes that range from an easy stroll to an intense workout. In our implementation, we focused on developing a complete system, including a user-friendly UI and an effective algorithm. This is our final project for CS 520: Software Engineering.",
+  "main": "index.js",
+  "exports": {
+    "./": "./staticFiles"
+  },
+  "directories": {
+    "src": "staticFiles",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/sayantan94/Elena.git)"
+  },
+  "keywords": [
+    "elena"
+  ],
+  "author": "elena",
+  "license": "ISC"
+}

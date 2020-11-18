@@ -234,7 +234,7 @@ class DisplayUI extends React.Component {
         const destination = document.getElementById('dest').value;
         const percentage = Number(document.getElementById('percentage').value);
         if(percentage>200 || percentage < 100){
-            alert("please add proper percentage value!")
+            alert("please add percentage between 100 to 200!")
             return
         }
         const max_min = document.getElementById('min-max').value;

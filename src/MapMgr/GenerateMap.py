@@ -27,7 +27,7 @@ class GenerateMap():
     def generateGraphPlot(self, graph):
         osmnx.log('Generating graph based on elevation !')
         nc = osmnx.plot.get_node_colors_by_attr(graph, 'elevation',cmap='plasma')
-        osmnx.plot_graph(graph, node_color=nc,node_size=5,edge_color='#333333', bgcolor='k')
+        osmnx.plot_graph(graph,node_size=5,edge_color='#333333', bgcolor='k')
         
     
     def generateMap(self, city='Amherst', state='MA'):
@@ -46,6 +46,7 @@ class GenerateMap():
             graph = self.add_node_elevations_open(graph)
             graph = osmnx.add_edge_grades(graph)
             # Dump the file
+            #self.generateGraphPlot(graph)
             pkl.dump(graph, open(mapFileName, "wb"))
             return graph
     

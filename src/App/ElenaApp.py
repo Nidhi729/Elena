@@ -2,6 +2,8 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 
+
+
 from src.RoutingMgr.ProcessRoute import ProcessRoute
 from src.MapMgr.GenerateMap import GenerateMap
 from src.MapMgr.ProcessMap import ProcessMap
@@ -24,6 +26,7 @@ class ElenaApp():
     
     def initialize_app(self):
         self.app = Flask(__name__)
+        
         # CORS
      
         CORS(self.app)

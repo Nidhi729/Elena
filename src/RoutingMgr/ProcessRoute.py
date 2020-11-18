@@ -19,13 +19,13 @@ class ProcessRoute(object):
             #pathAstar, distanceAstar, elevationAstar = float('-inf'),float('-inf'),float('inf')
         
             if boolIsMax:
-            #   return pathDjikstra, distanceDjikstra, elevationDjikstra
+                return pathDjikstra, distanceDjikstra, elevationDjikstra
                 if(elevationDjikstra > elevationAstar):
                     return pathDjikstra, distanceDjikstra, elevationDjikstra
                 else:
                     return pathAstar, distanceAstar, elevationAstar
             else:
-                #return pathDjikstra, distanceDjikstra, elevationDjikstra
+                return pathDjikstra, distanceDjikstra, elevationDjikstra
                 
                 if (elevationDjikstra < elevationAstar):
                     return pathDjikstra, distanceDjikstra, elevationDjikstra

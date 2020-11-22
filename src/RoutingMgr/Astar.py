@@ -21,8 +21,11 @@ class Astar(object):
 
 
     # For computing the h cost between two nodes
-    def heuristic(self, graph , nodeA, nodeB):
-        return self.processMapObj.getElevationGain(graph, nodeA, nodeB)
+    def heuristic(self, graph , node, end):
+        x1, y1 = graph.nodes[node]['x'], graph.nodes[node]['y']
+        x2, y2 = graph.nodes[end]['x'], graph.nodes[end]['y']
+        dist = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+        return dist
 
 
     def generatePath(self, revPath, start, end):
@@ -66,11 +69,11 @@ class Astar(object):
     def getRoute(self, graph, start, end, percentage, isMax=True):
         # get the shortest path
         minDistance = self.processMapObj.getPathLength(graph, self.getShortestPath(graph, start, end))
-        print("shortest path length: ", minDistance)
+        #print("shortest path length: ", minDistance)
 
         # Any path found should be less than this value
         threshold = (percentage/100) * minDistance
-        print("threshold:", threshold)
+        print("Max Route Length:", threshold)
 
         closed = set()
         open = set()
@@ -91,13 +94,13 @@ class Astar(object):
         routes = []
 
 
-        def getNextNode(nodes, node_costs, isMax):
-            return max(nodes, key = lambda item: sum(node_costs[item].values())) if isMax else min(nodes, key = lambda item: sum(node_costs[item].values()))
+        def getNextNode(nodes, node_costs):
+            return min(nodes, key = lambda item: sum(node_costs[item].values()))
 
 
 
         while open:
-            current = getNextNode(open, node_costs, isMax)
+            current = getNextNode(open, node_costs)
             open.remove(current)
 
             if current == end:
@@ -109,20 +112,20 @@ class Astar(object):
                         path_node = parent[path_node]
                     path.reverse()
 
-                    path_elevation = -1*self.processMapObj.getPathElevation(graph, path) if isMax else self.processMapObj.getPathElevation(graph, path)
+                    elevation_p = self.processMapObj.getPathElevation(graph, path)
+                    path_elevation = -1*elevation_p if isMax else elevation_p
                     path_length = self.processMapObj.getPathLength(graph, path)
                     path_details = self.processMapObj.getCoordinates(graph, path)
-                    print("found a path with length = " + str(node_costs[current]['g']) + " and elevation = " + str(path_elevation))
+
+                    print("found a path with length = " + str(node_costs[current]['g']) + " and elevation = " + str(elevation_p))
 
                     heapq.heappush(routes, (path_elevation, path_length, path_details))
 
                     #reset final node length
                     node_costs[current]['g'] = float('inf')
                 else:
-                    #print("found route but fails to satisfy threshold")
-                    #print("failed path length:", node_costs[current]['g'])
-                    #reset final node length
-                    node_costs[current]['g'] = float('inf')
+                    # Found route exceeding threshold
+                    break
             else:
                 closed.add(current)
                 for neighbor in graph[current]:
@@ -145,7 +148,7 @@ class Astar(object):
                         current_move_cost = graph.edges[current, neighbor, 0]['length']
 
                         neighbor_g_cost = current_g_cost + current_move_cost
-                        neighbor_h_cost = self.heuristic(graph, current, neighbor)
+                        neighbor_h_cost = self.heuristic(graph, current, end)
 
                         parent[neighbor] = current
                         node_costs[neighbor] = {}

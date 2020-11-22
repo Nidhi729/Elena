@@ -73,7 +73,7 @@ class Astar(object):
 
         # Any path found should be less than this value
         threshold = (percentage/100) * minDistance
-        print("Max Route Length:", threshold)
+        #print("Max Route Length:", threshold)
 
         closed = set()
         open = set()
@@ -117,7 +117,7 @@ class Astar(object):
                     path_length = self.processMapObj.getPathLength(graph, path)
                     path_details = self.processMapObj.getCoordinates(graph, path)
 
-                    print("found a path with length = " + str(node_costs[current]['g']) + " and elevation = " + str(elevation_p))
+                    #print("found a path with length = " + str(node_costs[current]['g']) + " and elevation = " + str(elevation_p))
 
                     heapq.heappush(routes, (path_elevation, path_length, path_details))
 

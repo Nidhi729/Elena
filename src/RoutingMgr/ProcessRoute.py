@@ -9,27 +9,24 @@ class ProcessRoute(object):
         self.processMapObj = ProcessMap()
         self.djikstraObj = Djikstra()
         self.astarObj = Astar()
-     
+
     def getPath(self, graph, startNode, endNode, percentage, boolIsMax):
-        
+
         try:
-                
+
             pathDjikstra, distanceDjikstra, elevationDjikstra = self.djikstraObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
             pathAstar, distanceAstar, elevationAstar = self.astarObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
             #pathAstar, distanceAstar, elevationAstar = float('-inf'),float('-inf'),float('inf')
-        
+
             if boolIsMax:
-                return pathDjikstra, distanceDjikstra, elevationDjikstra
                 if(elevationDjikstra > elevationAstar):
                     return pathDjikstra, distanceDjikstra, elevationDjikstra
                 else:
                     return pathAstar, distanceAstar, elevationAstar
             else:
-                return pathDjikstra, distanceDjikstra, elevationDjikstra
-                
                 if (elevationDjikstra < elevationAstar):
                     return pathDjikstra, distanceDjikstra, elevationDjikstra
                 else:
-                    return pathAstar, distanceAstar, elevationAstar    
+                    return pathAstar, distanceAstar, elevationAstar
         except Exception as err:
             raise Exception('Failed to fetch path. Error %s'%err)

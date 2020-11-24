@@ -10,6 +10,7 @@ pkg_scripts = []
 setup(
     name=src.__name__,
         long_description='ELena',
+        version='1.0.0',
 
    
     platforms=['Any'],

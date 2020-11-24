@@ -70,8 +70,6 @@ class ProcessMap(object):
             coord.append((graph.nodes[node]['y'], graph.nodes[node]['x']))
         return coord
 
-
-
     def getDistFromPercentage(self,deviation, percent):
         if percent:
             return percent / 100.0 * deviation

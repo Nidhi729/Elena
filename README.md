@@ -20,12 +20,10 @@ Architecture - (This video explains the entire flow of our system)
 https://youtu.be/fBHZz_ati1U
 ```
 
-Application Demo 
+Application Set-up + execution 
 
 ```
-https://youtu.be/wjJv7FNBlyI
-
-(setup and execution instructions are given at the end)
+URL
 ```
 
 # Installation

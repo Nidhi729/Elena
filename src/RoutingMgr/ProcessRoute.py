@@ -16,8 +16,7 @@ class ProcessRoute(object):
 
             pathDjikstra, distanceDjikstra, elevationDjikstra = self.djikstraObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
             pathAstar, distanceAstar, elevationAstar = self.astarObj.getRoute(graph, startNode, endNode, percentage, boolIsMax)
-            #pathAstar, distanceAstar, elevationAstar = float('-inf'),float('-inf'),float('inf')
-
+            
             if boolIsMax:
                 if(elevationDjikstra > elevationAstar):
                     return pathDjikstra, distanceDjikstra, elevationDjikstra

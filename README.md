@@ -14,10 +14,8 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 # Videos
 Architecture - (This video explains the entire flow of our system)
 
-https://youtu.be/fBHZz_ati1U
-
 ```
-URL
+https://youtu.be/fBHZz_ati1U
 ```
 
 Application Set-up + execution 

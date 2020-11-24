@@ -50,24 +50,19 @@ class ProcessMap(object):
 
     
     def getPathElevation(self, graph, path):
-        total_elevation = 0
+        elevation = 0
+        for idx in range(len(path)-1):
+            currElevation = self.getElevationGain(graph, path[idx], path[idx+1])
+            elevation += currElevation if currElevation > 0 else 0 
+        return elevation
     
-        for i in range(len(path) - 1):
-            curr_elevation = self.getElevationGain(graph, path[i], path[i + 1])
-            if curr_elevation > 0:
-                total_elevation += curr_elevation
-    
-        return total_elevation
-
 
     def getPathLength(self, graph , path):
-        total_length = 0
+        pathLength = 0
+        for idx in range(1,len(path)):
+            pathLength += self.getLength(graph, path[idx-1], path[idx])
+        return pathLength
     
-        for i in range(len(path) - 1):
-            total_length += self.getLength(graph, path[i], path[i + 1])
-    
-        return total_length
-
     
     def getCoordinates(self,graph, path):
         coord = []
@@ -77,7 +72,8 @@ class ProcessMap(object):
 
 
 
-    def getDistFromPercentage(self,min_distance, percent):
-        if percent > 1:
-            return (percent) / 100.0 * min_distance
-        return (percent) * min_distance
+    def getDistFromPercentage(self,deviation, percent):
+        if percent:
+            return percent / 100.0 * deviation
+        return percent * deviation
+    

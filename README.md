@@ -19,10 +19,12 @@ Architecture
 URL
 ```
 
-Application Set-up + execution 
+Application Demo
 
 ```
-URL
+https://youtu.be/wjJv7FNBlyI
+
+(setup and execution instructions are given at the end)
 ```
 
 # Installation

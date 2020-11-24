@@ -6,6 +6,7 @@ Elevation-based Navigation (EleNa) is an application that, given a start and end
 
 # Architecture
 ![Alt text](FinalArchitecture.png?raw=true "Elena")
+![Watch the video](FinalArchitecture.png)](Elena_Architecture_DemoUI.mp4)
 
 
 # Requirements

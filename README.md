@@ -13,19 +13,13 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 ![Alt text](files/ElenaUI.png?raw=true "ElenaUI")
 
 # Videos
-Architecture - (This video explains the entire flow of our system)
 
-```
-https://youtu.be/fBHZz_ati1U
-```
+Watch [ EleNA Architecture explanation - video explain the flow of our system ](https://youtu.be/fBHZz_ati1U)
 
-Application Demo
 
-```
-https://youtu.be/wjJv7FNBlyI
+Watch [ EleNA Application Demo ](https://youtu.be/wjJv7FNBlyI)
 
-(setup and execution instructions are given at the end)
-```
+`` Steps for setup and execution instructions are given at the end``
 
 # Installation
 The following versions have been used for building and installing the dependencies

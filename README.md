@@ -9,15 +9,11 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 # Architecture
 ![Alt text](files/FinalArchitecture.png?raw=true "Elena")
 
-# UI
-![Alt text](files/ElenaUI.png?raw=true "ElenaUI")
-
-
 # Videos
-Architecture - (This video explains the entire flow of our system)
+Architecture  
 
 ```
-https://youtu.be/fBHZz_ati1U
+URL
 ```
 
 Application Set-up + execution 

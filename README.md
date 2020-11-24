@@ -14,14 +14,14 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 
 # Videos
 
-Watch [ EleNA Architecture explanation - video explain the flow of our system ](https://youtu.be/fBHZz_ati1U)
+Watch [ EleNA Architecture explanation ](https://youtu.be/fBHZz_ati1U)
 
 
 Watch [ EleNA Application Demo ](https://youtu.be/wjJv7FNBlyI)
 
-`` Steps for setup and execution instructions are given at the end``
+#  Instructions for application setup and execution 
 
-# Installation
+## Installation
 The following versions have been used for building and installing the dependencies
 * Python 2.7
 * npm 6.14.8
@@ -42,7 +42,7 @@ pip install -r src/requirements.txt
 npm install
 ```
 
-# Build Application
+## Build Application
 
 Use the setup.py to build .whl file for the application. Build the application using the command
 
@@ -55,7 +55,7 @@ Install the build file using the command
 pip install dist/src-1.0.0-py2-none-any.whl
 ```
 
-# How to start 
+## How to start 
 
 After installing the required dependencies and building the app server as mentioned above, follow the steps to start the server.
 

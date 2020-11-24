@@ -31,6 +31,7 @@ class ProcessMap(object):
     def isLocationValid(self, graph, latitude, longitude):
         logging.log(20,'Validating if point is valid')
         _, dist = ox.get_nearest_node(graph,(latitude, longitude),method='euclidean' , return_dist=True)
+        print(dist)
         if dist > 10000: # Distance from the nearest node
             logging.log(40,'The location is not within 10000 nodes from the nearest node')
             return False

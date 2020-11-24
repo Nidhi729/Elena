@@ -24,7 +24,18 @@ class Test(unittest.TestCase):
         location = 'umass,amherst,ma'
         params = ProcessMap().getLocationParams(location)
         self.assertTrue(ProcessMap().isLocationValid(self.graph, params['latitude'], params['longitude']))
-         
+    
+    
+    def testValidCoordinatesOfLocation(self):
+        location = 'umass,amherst,ma'
+        params = ProcessMap().getLocationParams(location)
+        self.assertEqual(params['latitude'], 42.3869382)
+        self.assertEqual(params['longitude'], -72.52991477067445)
+        
+    
+    
+        
+        
     def testIsPathValid(self):
         pass 
     

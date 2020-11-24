@@ -96,9 +96,7 @@ class Test(unittest.TestCase):
         start = ProcessMap().getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
         end = ProcessMap().getNearestNode(graph, destParams['latitude'], destParams['longitude'])
 
-        minDistance = ProcessMap().getPathLength(graph, Astar().getShortestPath(graph, start, end))
-
-        pathDetails, pathLength, pathElevation = Astar().getRoute(graph, start, end, percentage=123, isMax=True)
+        pathDetails, _, _ = Astar().getRoute(graph, start, end, percentage=123, isMax=True)
 
         srcDetails = (srcParams['latitude'], srcParams['longitude'])
         destDetails = (destParams['latitude'], destParams['longitude'])

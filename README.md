@@ -12,6 +12,7 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 # Videos
 Architecture  
 
+![Click](files/Elena_Architecture_DemoUI.mp4)
 
 <video width="320" height="240" controls>
 	<source src="files/Elena_Architecture_DemoUI.mp4" type="video/mp4">

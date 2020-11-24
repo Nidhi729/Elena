@@ -1,4 +1,4 @@
-# Elena
+# EleNA : Elevation Based Navigation
 
 Elevation-based Navigation (EleNa) is an application that, given a start and end location, computes a route that maximizes or minimizes the elevation gain and limits the total distance between the locations to x% of the shortest path. 
 
@@ -11,12 +11,6 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 
 # Videos
 Architecture  
-
-![Click](files/Elena_Architecture_DemoUI.mp4)
-
-<video width="320" height="240" controls>
-	<source src="files/Elena_Architecture_DemoUI.mp4" type="video/mp4">
-</video>
 
 ```
 URL
@@ -62,31 +56,30 @@ Install .whl file
 pip install dist/src-1.0.0-py2-none-any.whl
 ```
 
-# Start Application
+# How to start 
 
 After installing the required dependencies and building the app server as mentioned above, follow the steps to start the server.
 
 
 * The flask server server would start by on port ``8080``. Please make sure the port is free for use.
-
+* Flask server URL ``http://127.0.0.1:8080/`` 
+* Start the flask server using the command
 
 
 ```
 python src/App/ElenaApp.py
 
-Configured osmnx
- * Serving Flask app "ElenaApp" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
-
-
-
 ```
+
 * npm server would start on port ``3000``. Please make sure the port is free for use
+* npm server URL : ``http://127.0.0.1:3000/``
+* Start the npm server using the command
 
 ```
 npm start
 ```
+# Test Suites
+
+Unit test have been added for our application.
+
+Unit test location : `` src/TestFiles/UnitTest.py``

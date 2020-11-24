@@ -83,3 +83,13 @@ npm start
 Unit test have been added for our application.
 
 Unit test location : `` src/TestFiles/UnitTest.py``
+
+The following test suite have been included:
+* Test Location is Valid
+* Test Location is InValid
+* Test For Path Elevation
+* Test For Path Length
+* Test For location coordinates
+* Test Get Nearest Node in graph
+* Test Djikstra Path Finding Algo
+* Test A* Path Finding Algo

@@ -25,7 +25,7 @@ class ProcessMap(object):
             params['longitude'] = self.geolocator.geocode(location).longitude
             return params
         except Exception as err:
-            raise Exception('INPUT NOT IN VALID FORMAT. Desired format Address,Town,State. Error %s' %err)
+            raise Exception('INPUT NOT IN VALID FORMAT or INVALID LOCATION. Desired format Address,Town,State. Error %s' %err)
         
             
     def isLocationValid(self, graph, latitude, longitude):

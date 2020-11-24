@@ -9,6 +9,10 @@ Maximizing the elevation gain could be useful to joggers/bikers who may be looki
 # Architecture
 ![Alt text](files/FinalArchitecture.png?raw=true "Elena")
 
+https://youtu.be/fBHZz_ati1U
+
+(This video explains the entire flow of our system)
+
 # Videos
 Architecture  
 

@@ -35,7 +35,7 @@ Create virtual environment ( This is an optional step, the application can be in
 Create a virtual environment : virtualenv virtualenvname
 Activate virtual environment : source virtualenvname activate
 ```
-Install dependencies / requirements 
+Install dependencies / requirements using the command
 
 ```
 pip install -r src/requirements.txt
@@ -45,12 +45,12 @@ npm install
 
 # Build Application
 
-Use the setup.py to build .whl file for the application
+Use the setup.py to build .whl file for the application. Build the application using the command
 
 ```
 python setup.py bdist_wheel
 ```
-Install .whl file
+Install the build file using the command
 
 ```
 pip install dist/src-1.0.0-py2-none-any.whl

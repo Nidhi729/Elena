@@ -1,11 +1,7 @@
 import unittest
-
 from src.MapMgr.GenerateMap import GenerateMap
-
 from src.MapMgr.ProcessMap import ProcessMap
-
 from src.RoutingMgr.Djikstra import Djikstra
-
 from src.RoutingMgr.Astar import Astar
 
 
@@ -14,27 +10,46 @@ class Test(unittest.TestCase):
 
     def setUp(self):
         self.graph = GenerateMap().generateMap('Amherst', 'MA')
-
+        self.generateMapObj = GenerateMap()
+        self.processMapObj = ProcessMap()
+        self.djikstraObj = Djikstra()
 
     def tearDown(self):
         pass
 
+    # Checks for Invalid Location
     def testInValidLocation(self):
         self.assertFalse(ProcessMap().isLocationValid(self.graph, float('inf'), float('inf')))
 
+    # Checks for Valid Location
     def testIsValidLocation(self):
         location = 'umass,amherst,ma'
         params = ProcessMap().getLocationParams(location)
         self.assertTrue(ProcessMap().isLocationValid(self.graph, params['latitude'], params['longitude']))
 
+    # Checks for Path elevation
+    def testGetPathElevation(self):
+        pathElevation = self.processMapObj.getPathElevation(self.graph, self.djikstraObj.shortestPath(self.graph, 6775672013, 6775672007, 'length'))
+        self.assertEqual(pathElevation, 9)
 
+    # Checks for path length
+    def testGetPathLength(self):
+       path = self.processMapObj.getPathLength(self.graph, self.djikstraObj.shortestPath(self.graph, 6775672013, 6775672007, 'length'))
+       self.assertEqual(382.52, path)
+
+    # Checks for valid coordinates
     def testValidCoordinatesOfLocation(self):
         location = 'umass,amherst,ma'
         params = ProcessMap().getLocationParams(location)
         self.assertEqual(params['latitude'], 42.3869382)
         self.assertEqual(params['longitude'], -72.52991477067445)
 
+    # Checks for nearest Node
+    def testGetNearestNode(self):
+        nearestNode = self.processMapObj.getNearestNode(self.map, 42.37, -72.51)
+        self.assertEqual(nearestNode, 66612947)
 
+    # Checks for Djikstra's Algorithm
     def testDjikstraRoute(self):
         src = 'umass,amherst,ma'
         destination = 'boulder,amherst,ma'
@@ -48,9 +63,8 @@ class Test(unittest.TestCase):
         # Elevation Gain
         self.assertEqual(elevation, 45)
 
-
+    # Checks for A* star route length is with the threshold
     def testIsAStarRouteWithinThreshold(self):
-        #print("\nTesting if A* star route length is with the threshold\n")
         source = 'Boulders, Amherst, MA'
         destination = 'UMass, Amherst, MA'
         srcParams = ProcessMap().getLocationParams(source)
@@ -72,8 +86,8 @@ class Test(unittest.TestCase):
 
         self.assertTrue(pathLength<=threshold)
 
+    # checks for validity of A* path
     def testAstarValidPath(self):
-        #print("\nTesting if A* star route is valid\n")
         source = 'Boulders, Amherst, MA'
         destination = 'UMass, Amherst, MA'
         srcParams = ProcessMap().getLocationParams(source)

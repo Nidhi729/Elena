@@ -17,7 +17,6 @@ class Test(unittest.TestCase):
     def tearDown(self):
         pass
 
-# 
     def testInValidLocation(self):
         self.assertFalse(ProcessMap().isLocationValid(self.graph, float('inf'), float('inf')))
           

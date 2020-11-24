@@ -33,12 +33,12 @@ class Djikstra(object):
         cost[start] = 0
 
         while len(queue) > 0:
-            _,currNode = heapq.heappop(queue)
+            currCost,currNode = heapq.heappop(queue)
             if currNode == end:
                 break
             
             for _,nextNode,_ in graph.edges(currNode, data=True):
-                currCost = cost[currNode]
+                #currCost = cost[currNode]
                 currCost += graph.edges[currNode, nextNode, 0]['length']
                 
                 if nextNode not in cost or currCost < cost[nextNode]:

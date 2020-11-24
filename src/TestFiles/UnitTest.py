@@ -4,6 +4,7 @@ from src.MapMgr.GenerateMap import GenerateMap
 
 from src.MapMgr.ProcessMap import ProcessMap
 
+from src.RoutingMgr.Djikstra import Djikstra
 
 
 class Test(unittest.TestCase):
@@ -33,18 +34,18 @@ class Test(unittest.TestCase):
         self.assertEqual(params['longitude'], -72.52991477067445)
         
     
-    
-        
-        
-    def testIsPathValid(self):
-        pass 
-    
-    def testDjstkraValidPath(self):
-        pass 
-    
-    def testName(self):
-        pass
-
+    def testDjikstraRoute(self):
+        src = 'umass,amherst,ma'
+        destination = 'boulder,amherst,ma'
+        srcParams = ProcessMap().getLocationParams(src)
+        destParams = ProcessMap().getLocationParams(destination)
+        startNode = ProcessMap().getNearestNode(self.graph, srcParams['latitude'], srcParams['longitude'])
+        endNode = ProcessMap().getNearestNode(self.graph, destParams['latitude'], destParams['longitude'])
+        _, dist, elevation = Djikstra().getRoute(self.graph, startNode, endNode, 120, False)
+        # Distance Gain
+        self.assertEqual(dist, 4417.54)
+        # Elevation Gain
+        self.assertEqual(elevation, 45)
 
 if __name__ == "__main__":
     unittest.main()

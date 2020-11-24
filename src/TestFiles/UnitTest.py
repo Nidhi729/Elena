@@ -7,7 +7,6 @@ from src.RoutingMgr.Astar import Astar
 
 class Test(unittest.TestCase):
 
-
     def setUp(self):
         self.graph = GenerateMap().generateMap('Amherst', 'MA')
         self.generateMapObj = GenerateMap()
@@ -29,13 +28,13 @@ class Test(unittest.TestCase):
 
     # Checks for Path elevation
     def testGetPathElevation(self):
-        pathElevation = self.processMapObj.getPathElevation(self.graph, self.djikstraObj.shortestPath(self.graph, 6775672013, 6775672007, 'length'))
+        pathElevation = self.processMapObj.getPathElevation(self.graph, self.djikstraObj.getShortestPath(self.graph, 6775672013, 6775672007))
         self.assertEqual(pathElevation, 9)
 
     # Checks for path length
     def testGetPathLength(self):
-       path = self.processMapObj.getPathLength(self.graph, self.djikstraObj.shortestPath(self.graph, 6775672013, 6775672007, 'length'))
-       self.assertEqual(382.52, path)
+        path = self.processMapObj.getPathLength(self.graph, self.djikstraObj.getShortestPath(self.graph, 6775672013, 6775672007))
+        self.assertEqual(382.52, path)
 
     # Checks for valid coordinates
     def testValidCoordinatesOfLocation(self):
@@ -46,7 +45,7 @@ class Test(unittest.TestCase):
 
     # Checks for nearest Node
     def testGetNearestNode(self):
-        nearestNode = self.processMapObj.getNearestNode(self.map, 42.37, -72.51)
+        nearestNode = self.processMapObj.getNearestNode(self.graph, 42.37, -72.51)
         self.assertEqual(nearestNode, 66612947)
 
     # Checks for Djikstra's Algorithm
@@ -70,21 +69,20 @@ class Test(unittest.TestCase):
         srcParams = ProcessMap().getLocationParams(source)
         destParams = ProcessMap().getLocationParams(destination)
 
-        graph =  self.graph
+        graph = self.graph
 
         start = ProcessMap().getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
         end = ProcessMap().getNearestNode(graph, destParams['latitude'], destParams['longitude'])
-
 
         minDistance = ProcessMap().getPathLength(graph, Astar().getShortestPath(graph, start, end))
 
         percentage = 150
         # Any path found should be less than this value
-        threshold = (percentage/100) * minDistance
+        threshold = (percentage / 100) * minDistance
 
-        _, pathLength, _ =  Astar().getRoute(graph, start, end, percentage, isMax=True)
+        _, pathLength, _ = Astar().getRoute(graph, start, end, percentage, isMax=True)
 
-        self.assertTrue(pathLength<=threshold)
+        self.assertTrue(pathLength <= threshold)
 
     # checks for validity of A* path
     def testAstarValidPath(self):
@@ -93,11 +91,10 @@ class Test(unittest.TestCase):
         srcParams = ProcessMap().getLocationParams(source)
         destParams = ProcessMap().getLocationParams(destination)
 
-        graph =  self.graph
+        graph = self.graph
 
         start = ProcessMap().getNearestNode(graph, srcParams['latitude'], srcParams['longitude'])
         end = ProcessMap().getNearestNode(graph, destParams['latitude'], destParams['longitude'])
-
 
         minDistance = ProcessMap().getPathLength(graph, Astar().getShortestPath(graph, start, end))
 
@@ -110,17 +107,17 @@ class Test(unittest.TestCase):
         destFromAstar = pathDetails[1]
 
         def isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
-            return abs(a-b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
+            return abs(a - b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
 
-        #check that if route is computed
-        self.assertTrue(len(pathDetails)>=2)
+        # check that if route is computed
+        self.assertTrue(len(pathDetails) >= 2)
 
         # check that a* star route's source and destination longitude and latitude is closer to the input provided
-        self.assertTrue(isclose(srcFromAstar[0], srcDetails[0], rel_tol = 1e-03))
-        self.assertTrue(isclose(srcFromAstar[1], srcDetails[1], rel_tol = 1e-03))
+        self.assertTrue(isclose(srcFromAstar[0], srcDetails[0], rel_tol=1e-03))
+        self.assertTrue(isclose(srcFromAstar[1], srcDetails[1], rel_tol=1e-03))
 
-        self.assertTrue(isclose(destFromAstar[0], destDetails[0], rel_tol = 1e-03))
-        self.assertTrue(isclose(destFromAstar[1], destDetails[1], rel_tol = 1e-03))
+        self.assertTrue(isclose(destFromAstar[0], destDetails[0], rel_tol=1e-03))
+        self.assertTrue(isclose(destFromAstar[1], destDetails[1], rel_tol=1e-03))
 
 
 if __name__ == "__main__":
